@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Header</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-container">
+    <div class="logo">
+        <span>D</span><span>O</span><span>M</span>
+      </div>
+      
+    <div class="menu-toggle" id="menu-toggle">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav id="nav-links">
+      <a href="index.html">Validation</a>
+      <a href="todo.html">Todo</a>
+      <a href="slider.html">Slider</a>
+      <a href="accordian.html">Accordian</a>
+      <a href="image.html">Image Gallery</a>
+      <a href="color.html">Color Picker</a>
+    </nav>
+  </div>
+</header>
+
+
+<div class="containerimg">
+  <div class="otherimg">
+  <img onmouseover="swap(this)" onmouseleave="rem(this)" src="https://picsum.photos/200/300?random=3" alt="">
+  <img onmouseover="swap(this)" onmouseleave="rem(this)" src="https://picsum.photos/200/300?random=4" alt="">
+  <img onmouseover="swap(this)" onmouseleave="rem(this)" src="https://picsum.photos/200/300?random=5" alt="">
+  <img onmouseover="swap(this)" onmouseleave="rem(this)" src="https://picsum.photos/200/300?random=6" alt="">
+  <img onmouseover="swap(this)" onmouseleave="rem(this)" src="https://picsum.photos/200/300?random=7" alt="">
+  <img onmouseover="swap(this)" onmouseleave="rem(this)" src="https://picsum.photos/200/300?random=8" alt="">
+  <img onmouseover="swap(this)" onmouseleave="rem(this)" src="https://picsum.photos/200/300?random=9" alt="">
+      
+  </div>
+  
+  
+  <div class="mainimg">
+  <img src="https://picsum.photos/200/300?random=2" alt="">
+  
+  
+</div>
+
+</div>
+
+<script>
+var otherimg = document.querySelectorAll('.otherimg img');
+var mainimg = document.querySelector('.mainimg img');
+
+
+
+function swap(ev){
+  mainimg.src = ev.src;
+  ev.classList.add('bord');
+
+  
+}
+
+function rem(eve){
+eve.classList.remove('bord');;
+
+}
+
+
+
+</script>
+
+
+
+</body>
+</html>
